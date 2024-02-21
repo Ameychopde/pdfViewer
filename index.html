@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Viewer</title>
+    <script src="https://kit.fontawesome.com/a08ec641d5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.0.379/pdf_viewer.min.css"
+        integrity="sha512-v7RQDI7qsfFNaXRzzylpsVV7ncQBdyozLze5YNgox/0z4Mc3Ellt2dBd0CbmufeD7IIh5TCJQ8ORAF/KvzVITg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="top-bar">
+        <button class="btn" id="prev-page">
+            <i class="fas fa-chevron-left"></i> Prev Page
+        </button>
+        <button class="btn" id="next-page">
+            Next Page <i class="fas fa-chevron-right"></i>
+        </button>
+        Page <span id="page-num"></span> of <span id="page-count"></span>
+    </div>
+
+    <div class="container" id="inputUrl">
+        <h2>Upload PDF File:</h2><br>
+        <input type="text" id="fileInput" placeholder="Enter URL or file location..."><br>
+    </div>
+
+    <canvas id="pdf-render">
+
+    </canvas>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.min.js"></script>
+
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>

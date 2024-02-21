@@ -1,0 +1,2 @@
+# pdfViewer
+ This project is a simple PDF viewer built using HTML, CSS, and JavaScript. It leverages a Content Delivery Network (CDN) to efficiently serve the necessary libraries and dependencies. The viewer allows users to view PDF documents directly in their web browser without needing additional plugins. It is lightweight and can be easily integrated into web applications for displaying PDF files.
